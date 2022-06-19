@@ -3,10 +3,12 @@
     padding: 0;
      box-sizing: border-box;
 }
-
+:root {
+    --visual-height: 100%;
+}
 body {
-    height: 100vh;
-    background-color: #282828;
+
+    height: var(--visual-height);
     display: grid;
     place-items: center;
     background: url('https://images.unsplash.com/photo-1653121649700-a7f15f74d02a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDF8Q0R3dXdYSkFiRXd8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60') 0 0 / cover;
@@ -23,6 +25,7 @@ h1::after {
     bottom: -20px;
     right: 0;
     font-weight: 500;
+    background-color: #c6c6c61a;
     padding: 3px 7px;
     font-size: 14px;
 }
